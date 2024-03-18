@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>НЕНАВИЖУ МАКСА</title>
 
-        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico"> -->
         <link href="./styles/main.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
@@ -24,7 +24,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Фотогалерея</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Свежий релиз</a>
+                    <a class="nav-link" href="#new-album">Свежий релиз</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Соц сети</a>
@@ -44,16 +44,16 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Фотогалерея</a>
+                      <a class="nav-link" aria-current="page" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Фотогалерея</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Свежий релиз</a>
+                        <a class="nav-link" aria-current="page" href="#new-album" data-bs-dismiss="offcanvas" aria-label="Close">Свежий релиз</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Соц сети</a>
+                        <a class="nav-link" aria-current="page" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Соц сети</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Написать нам</a>
+                        <a class="nav-link" aria-current="page" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Написать нам</a>
                     </li>
                   </ul>
 
@@ -110,9 +110,14 @@
                     <h2 class="new-album-title">Мини-альбом "Луна"</h2>
                     <a class="listen-new-album-now button">Слушать сейчас</a>
                 </div>
+
+                <div class="new-album-video">
+                  <iframe width="320" height="200" src="https://www.youtube.com/embed/LRoO5n7Jan8?si=YuqwYVg2uIzBxqRb" title="Ненавижу Макса - Колыбель" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
