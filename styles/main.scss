@@ -22,15 +22,21 @@ html {
 
         .button {
             color: #fff;
-            display: block;
             text-decoration: none;
             background-color: #ef102a;
             padding: 0.7rem 0;
-            width: 10rem;
+            width: 12rem;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
             transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            svg {
+                max-width: 1rem;
+            }
         }
 
         .button:focus {
