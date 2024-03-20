@@ -157,7 +157,7 @@ html {
 
                 iframe {
                     width: 100%;
-                    height: 100%;
+                    height: 30rem;
                 }
             }
         }
@@ -179,6 +179,12 @@ html {
     
             .offcanvas {
                 display: flex;
+            }
+        }
+
+        .new-album-video {
+            iframe {
+                height: auto;
             }
         }
     }
