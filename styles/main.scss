@@ -11,6 +11,15 @@ html {
     body {
         background-color: #0c0c0c;
 
+        h2 {
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        h2.slide {
+            opacity: 1;
+        }
+
         .button {
             color: #fff;
             display: block;
@@ -162,7 +171,34 @@ html {
         
                 .listen-new-album-now {
                     margin-top: 1rem;
+                    opacity: 0;
+                }
 
+                .listen-new-album-now.slide {
+                    -webkit-animation: slide-right-listen-new-album-now 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-right-listen-new-album-now 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    opacity: 1;
+
+                    @-webkit-keyframes slide-right-listen-new-album-now {
+                        0% {
+                            -webkit-transform: translateX(-100rem);
+                            transform: translateX(-100rem);
+                        }
+                        100% {
+                            -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                        }
+                      }
+                      @keyframes slide-right-listen-new-album-now {
+                        0% {
+                            -webkit-transform: translateX(-100rem);
+                            transform: translateX(-100rem);
+                        }
+                        100% {
+                            -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                        }
+                    }
                 }
             }
 

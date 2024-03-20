@@ -22,7 +22,7 @@ let options = {
 };
 
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.tgk, .tt, .inst, .youtube');
+let elements = document.querySelectorAll('.tgk, .tt, .inst, .youtube, .listen-new-album-now, h2');
   
 for (let elm of elements) {
     observer.observe(elm);
