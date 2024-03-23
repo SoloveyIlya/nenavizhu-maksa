@@ -14,6 +14,7 @@ html {
         h2 {
             opacity: 0;
             transition: all 1s;
+            text-align: center;
         }
 
         h2.slide {
@@ -33,6 +34,7 @@ html {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            border-radius: 0.6rem;
 
             svg {
                 max-width: 1rem;
@@ -150,9 +152,6 @@ html {
         }
     
         .new-album {
-            background-image: 
-                linear-gradient(180deg, rgba(12,12,12, 1) 0%, rgba(12,12,12, 0.1) 80%),
-                url('../img/luna-background.jpeg');
             background-position: center;
             background-size: cover;
             padding: 5rem 0;

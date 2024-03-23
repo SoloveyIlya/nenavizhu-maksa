@@ -43,17 +43,17 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Фотогалерея</a>
+                    <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <a class="nav-link" aria-current="page" href="#">Фотогалерея</a>
                     </li>
                     <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <a class="nav-link" aria-current="page" href="#new-album">Свежий релиз</a>
+                        <a class="nav-link" aria-current="page" href="#new-album">Музыка</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" data-bs-dismiss="offcanvas" aria-label="Close" href="#social-media">Соц сети</a>
+                    <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close" >
+                        <a class="nav-link" aria-current="page"href="#social-media">Соц сети</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Написать нам</a>
+                    <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <a class="nav-link" aria-current="page" href="#">Написать нам</a>
                     </li>
                   </ul>
 
@@ -102,22 +102,57 @@
             </a>
         </div>
 
-        <div id="new-album" class="new-album">
-            <div class="container">
-                <div class="album-cover">
-                    <img src="./img/luna-album.jpeg" alt="ненавижу Макса Луна">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Луна"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Никогда не скучать"></button>
+            </div>
+            <div id="new-album" class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="new-album" style="background-image: 
+                    linear-gradient(180deg, rgba(12,12,12, 1) 0%, rgba(12,12,12, 0.1) 80%),
+                    url('./img/luna-background.jpeg');">
+                        <div class="container">
+                            <div class="album-cover">
+                                <img src="./img/luna-album.jpeg" alt="ненавижу Макса Луна">
+                            </div>
+            
+                            <div class="listen-new-album-section">
+                                <h2 class="new-album-title">Мини-альбом "Луна"</h2>
+                                <a class="listen-new-album-now button" href="https://band.link/lunaalbum" target="_blank">
+                                    Слушать сейчас
+                                    <svg viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="#ffffff"> <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                                </a>
+                            </div>
+            
+                            <div class="new-album-video">
+                              <iframe src="https://www.youtube.com/embed/LRoO5n7Jan8?si=YuqwYVg2uIzBxqRb" title="Ненавижу Макса - Колыбель" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="listen-new-album-section">
-                    <h2 class="new-album-title">Мини-альбом "Луна"</h2>
-                    <a class="listen-new-album-now button" href="https://band.link/nenavizhumaksa" target="_blank">
-                        Слушать сейчас
-                        <svg viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="#ffffff"> <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
-                    </a>
-                </div>
-
-                <div class="new-album-video">
-                  <iframe src="https://www.youtube.com/embed/LRoO5n7Jan8?si=YuqwYVg2uIzBxqRb" title="Ненавижу Макса - Колыбель" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="new-album" style="background-image: 
+                    linear-gradient(180deg, rgba(12,12,12, 1) 0%, rgba(12,12,12, 0.1) 80%),
+                    url('./img/nikogda-ne-skuchat-background.jpeg');">
+                        <div class="container">
+                            <div class="album-cover">
+                                <img src="./img/nikogda-ne-skuchat-cover.gif" alt="ненавижу Макса Луна">
+                            </div>
+            
+                            <div class="listen-new-album-section">
+                                <h2 class="new-album-title">Мини-альбом "Никогда не скучать"</h2>
+                                <a class="listen-new-album-now button" href="https://band.link/nenavizhumaksa" target="_blank">
+                                    Слушать сейчас
+                                    <svg viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="#ffffff"> <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                                </a>
+                            </div>
+            
+                            <div class="new-album-video">
+                                <iframe width="385" height="685" src="https://www.youtube.com/embed/vtJVrFt0-AA" title="ненавижу макса - 30.11.2022 - никогда не скучать ( teaser)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
