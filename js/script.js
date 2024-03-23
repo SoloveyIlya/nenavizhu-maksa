@@ -1,6 +1,8 @@
 window.onload = function() {
     document.querySelector('body').style.overflow = 'auto';
     document.querySelector('.preloader').style.opacity = 0;
+    document.querySelector('nav').style.zIndex = 10002;
+    document.querySelector('.down-arrow').style.zIndex = 10001;
     document.querySelector('html body .main img').style.zIndex = 100;
 
     document.querySelectorAll('.nav-link').forEach((element) => {

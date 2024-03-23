@@ -25,6 +25,7 @@ html {
             opacity: 0;
             transition: all 1s;
             text-align: center;
+            color: #fff;
         }
 
         h2.slide {
@@ -360,6 +361,78 @@ html {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .more-photos {
+            .carousel-inner {
+                display: flex;
+                align-items: center;
+
+                .carousel-item {
+                    img {
+                        opacity: 0.6;
+                    }
+                }
+
+                a {
+                    margin: auto;
+                    z-index: 1;
+                    background-color: #fff;
+                    color: #ef102a;
+                }
+            }
+        }
+
+        .contacts {
+            padding: 5rem 0;
+            background-image:
+                url('../img/contacts-background.jpeg');
+            background-size: cover;
+            background-position: center;
+
+            .contacts-wrapper {
+                text-align: center;
+                background-color: rgba($color: #000000, $alpha: 0.9);
+                padding: 2rem;
+                width: max-content;
+                margin: auto;
+                border-radius: 0.6rem;
+
+                .contacts-item {
+                    color: #4f8dfe;
+                    font-weight: bold;
+
+                    div {
+                        color: #fff;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        footer {
+            padding: 3rem 0;
+
+            .logo {
+                min-width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 10rem;
+                    margin: auto;
+                }
+            }
+
+            .streaming-links {
+                display: flex;
+                justify-content: space-between;
+    
+                svg {
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
         }
