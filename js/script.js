@@ -1,29 +1,35 @@
-document.querySelectorAll('.nav-link').forEach((element) => {
+window.onload = function() {
+    document.querySelector('body').style.overflow = 'auto';
+    document.querySelector('.preloader').style.opacity = 0;
+    document.querySelector('html body .main img').style.zIndex = 100;
 
-    element.onclick = function(event) {
-        document.querySelectorAll('.nav-link').forEach((e) => {
-            e.classList.remove('active');
-        });
+    document.querySelectorAll('.nav-link').forEach((element) => {
 
-        event.srcElement.classList.add('active');
-    };
-});
-
-function onEntry(entry) {
-    entry.forEach(change => {
-        if (change.isIntersecting) {
-            change.target.classList.add('slide');
-        }
+        element.onclick = function(event) {
+            document.querySelectorAll('.nav-link').forEach((e) => {
+                e.classList.remove('active');
+            });
+    
+            event.srcElement.classList.add('active');
+        };
     });
-}
-  
-let options = {
-    threshold: [0.5] 
-};
-
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.tgk, .tt, .inst, .youtube, .listen-new-album-now, h2');
-  
-for (let elm of elements) {
-    observer.observe(elm);
-}
+    
+    function onEntry(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.classList.add('slide');
+            }
+        });
+    }
+      
+    let options = {
+        threshold: [0.5] 
+    };
+    
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.tgk, .tt, .inst, .youtube, .listen-new-album-now, h2');
+      
+    for (let elm of elements) {
+        observer.observe(elm);
+    }
+ };
